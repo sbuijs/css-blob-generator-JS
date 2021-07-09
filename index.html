@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 🚀 New basic project </title>
+    <title> 🟣 Css blob</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,43 +20,23 @@
 
     <div class="content">
         <div class="project-icon">
-            👩‍💻
+            🟣
         </div>
-        <h1 class="project-title">Hello world!</h1>
+        <h1 class="project-title">Let's create a blob!</h1>
 
-        <h4>Let's hit the ground running.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor semper libero sed tempor.
-            Cras
-            consequat
-            eu nisl sed convallis. Nunc fermentum tincidunt enim. Nullam sagittis non magna in venenatis. Vivamus
-            ullamcorper enim
-            enim, eu consectetur nibh finibus non. Vestibulum convallis, purus ut fermentum porta, nisl est accumsan
-            nulla,
-            vitae
-            lobortis ipsum purus a velit. Maecenas congue id velit in convallis. Morbi ultrices est sed vestibulum
-            placerat.
-            Praesent commodo magna a mi porttitor, finibus faucibus nibh sodales. Fusce accumsan et felis quis
-            consectetur.
-            In
-            rhoncus ut sapien eget suscipit. Cras ut mauris commodo, finibus turpis in, iaculis erat. In ac dolor metus.
-            Phasellus
-            convallis enim mauris, id vulputate tellus feugiat ac.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor semper libero sed tempor.
-            Cras
-            consequat
-            eu nisl sed convallis. Nunc fermentum tincidunt enim. Nullam sagittis non magna in venenatis. Vivamus
-            ullamcorper enim
-            enim, eu consectetur nibh finibus non. Vestibulum convallis, purus ut fermentum porta, nisl est accumsan
-            nulla,
-            vitae
-            lobortis ipsum purus a velit. Maecenas congue id velit in convallis. Morbi ultrices est sed vestibulum
-            placerat.
-            Praesent commodo magna a mi porttitor, finibus faucibus nibh sodales. Fusce accumsan et felis quis
-            consectetur.
-            In
-            rhoncus ut sapien eget suscipit. Cras ut mauris commodo, finibus turpis in, iaculis erat. In ac dolor metus.
-            Phasellus
-            convallis enim mauris, id vulputate tellus feugiat ac.</p>
+
+        <div id="blob"></div>
+
+        <form action="">
+            <label for="color">Color:</label><br />
+            <input type="range" min="0" max="100" value="50" class="slider" id="color"><br />
+            <br />
+            <label for="border-radius">Border radius:</label><br />
+            <input type="range" min="0" max="80" value="0" class="slider" id="border-radius"><br />
+            <p id="border-radius-value"></p>
+            <button id="sumbit">Submit</button>
+        </form>
+
     </div>
     <script src="script.js"></script>
 </body>

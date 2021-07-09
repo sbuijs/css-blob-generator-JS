@@ -103,3 +103,12 @@ footer p{
 font-family: 'Merriweather', serif;
 }
 
+
+
+#blob{
+  width: 10rem;
+  height: 10rem;
+  background-color: #2e2e31;
+  border-radius: 0px;
+}
+
