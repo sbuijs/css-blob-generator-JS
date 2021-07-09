@@ -103,6 +103,14 @@ footer p{
 font-family: 'Merriweather', serif;
 }
 
+.blob-container{
+  background-color: #fff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 #blob{
   width: 100px;

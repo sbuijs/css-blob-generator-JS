@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 🟣 Css blob</title>
+    <title> 🟡 Css blob</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +20,18 @@
 
     <div class="content">
         <div class="project-icon">
-            🟣
         </div>
         <h1 class="project-title">Let's create a blob!</h1>
-        <div id="blob"></div>
+        <div class="blob-container">
+            <div id="blob"></div>
+        </div>
 
         <form action="">
             <label for="color">Color:</label><br />
             <input type="color" id="color"><br />
             <br />
             <label for="border-radius">Border radius:</label><br />
-            <input type="range" min="0" max="80" value="0" class="slider" id="border-radius"><br />
+            <input type="range" min="0" max="100" value="0" class="slider" id="border-radius"><br />
             <label for="size">Size:</label><br />
             <input type="range" min="100" max="250" step="50" value="0" class="slider" id="size"><br />
             <p id="border-radius-value"></p>

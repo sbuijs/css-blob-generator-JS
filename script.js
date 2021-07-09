@@ -11,13 +11,13 @@ const defaultBorderRadius = '0';
 const defaultColor = '#000';
 const defaultSize = '100';
 
-//---border
-//function that changes the blob after the user changed the value of the slider
+
+
+//functions that changes the blob after the user changed the value of the input
 borderRadius.oninput = function () {
     blob.style.borderRadius = `${borderRadius.value}px`;
 
 };
-
 color.oninput = function () {
     blob.style.backgroundColor = `${color.value}`;
 };
@@ -26,18 +26,20 @@ color.oninput = function () {
 size.oninput = function () {
     blob.style.width = `${size.value}px`;
     blob.style.height = `${size.value}px`;
-    console.log(size.value);
 };
+
 
 
 
 //function that creates the code based on the user input.
 function createCode() {
     code = `
+    <div id="blob"></div>
+
     #blob{
-      width: 10rem;
-      height: 10rem;
-      background-color: #2e2e31;
+      width: ${size.value}px;
+      height: ${size.value}px;
+      background-color: ${color.value};
       border-radius: ${borderRadius.value}px;
     }
     `;
@@ -87,6 +89,9 @@ function resetBlob() {
     blob.style.borderRadius = `${defaultBorderRadius}px`;
     color.value = defaultColor;
     blob.style.backgroundColor = `${defaultColor}`;
+    size.value = defaultSize;
+    blob.style.width = `${defaultSize}`;
+    blob.style.height = `${defaultSize}`;
 };
 
 
