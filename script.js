@@ -5,6 +5,11 @@ const borderRadius = document.getElementById("border-radius");
 const color = document.getElementById("color");
 const copyCodeButton = document.getElementById("copyCode");
 
+const resetBlobButton = document.getElementById("reset");
+
+const defaultBorderRadius = '0';
+const defaultColor = '#000';
+
 
 //---border
 //function that changes the blob after the user changed the value of the slider
@@ -69,5 +74,15 @@ function copyCode() {
 
 };
 
-copyCodeButton.addEventListener('click', copyCode);
+//function that resets the valu
+function resetBlob() {
+    borderRadius.value = defaultBorderRadius;
+    blob.style.borderRadius = `${defaultBorderRadius}px`;
+    color.value = defaultColor;
+    blob.style.backgroundColor = `${defaultColor}`;
+};
 
+
+//Event listerners
+copyCodeButton.addEventListener('click', copyCode);
+resetBlobButton.addEventListener('click', resetBlob);
