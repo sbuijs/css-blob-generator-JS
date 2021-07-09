@@ -14,3 +14,19 @@ borderRadius.oninput = function () {
 
 
 
+//function that copies the css code to the clipboard
+function copyCode() {
+    console.log(`copy code`);
+    code = `
+    #blob{
+      width: 10rem;
+      height: 10rem;
+      background-color: #2e2e31;
+      border-radius: ${borderRadius.value}px;
+    }
+    `;
+    console.log(code);
+};
+
+copyCodeButton.addEventListener('click', copyCode);
+
