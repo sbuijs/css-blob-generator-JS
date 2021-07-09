@@ -9,6 +9,7 @@ const resetBlobButton = document.getElementById("reset");
 
 const defaultBorderRadius = '0';
 const defaultColor = '#000';
+const defaultSize = '100';
 
 //---border
 //function that changes the blob after the user changed the value of the slider
@@ -19,6 +20,13 @@ borderRadius.oninput = function () {
 
 color.oninput = function () {
     blob.style.backgroundColor = `${color.value}`;
+};
+
+
+size.oninput = function () {
+    blob.style.width = `${size.value}px`;
+    blob.style.height = `${size.value}px`;
+    console.log(size.value);
 };
 
 
