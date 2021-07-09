@@ -4,13 +4,13 @@ const blob = document.getElementById("blob");
 const borderRadius = document.getElementById("border-radius");
 const color = document.getElementById("color");
 const copyCodeButton = document.getElementById("copyCode");
+const animateButton = document.getElementById("animate");
 
 const resetBlobButton = document.getElementById("reset");
 
 const defaultBorderRadius = '0';
 const defaultColor = '#000';
 const defaultSize = '100';
-
 
 
 //functions that changes the blob after the user changed the value of the input
@@ -81,6 +81,12 @@ function copyCode() {
 
 };
 
+//turn animation on/off
+function addAnimation() {
+    blob.classList.toggle("animate");
+};
+
+
 //function that resets the valu
 function resetBlob() {
     borderRadius.value = defaultBorderRadius;
@@ -93,6 +99,8 @@ function resetBlob() {
 };
 
 
+
 //Event listerners
 copyCodeButton.addEventListener('click', copyCode);
 resetBlobButton.addEventListener('click', resetBlob);
+animateButton.addEventListener('click', addAnimation);
