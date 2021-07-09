@@ -15,7 +15,7 @@ const defaultSize = '100';
 
 //functions that changes the blob after the user changed the value of the input
 borderRadius.oninput = function () {
-    blob.style.borderRadius = `${borderRadius.value}px`;
+    blob.style.borderRadius = `${borderRadius.value}%`;
 
 };
 color.oninput = function () {
@@ -27,8 +27,6 @@ size.oninput = function () {
     blob.style.width = `${size.value}px`;
     blob.style.height = `${size.value}px`;
 };
-
-
 
 
 //function that creates the code based on the user input.
