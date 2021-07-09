@@ -6,14 +6,16 @@ const color = document.getElementById("color");
 const copyCodeButton = document.getElementById("copyCode");
 
 
-
 //---border
 //function that changes the blob after the user changed the value of the slider
 borderRadius.oninput = function () {
     blob.style.borderRadius = `${borderRadius.value}px`;
+
 };
 
-
+color.oninput = function () {
+    blob.style.backgroundColor = `${color.value}`;
+};
 
 
 
