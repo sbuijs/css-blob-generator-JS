@@ -117,7 +117,9 @@ font-family: 'Merriweather', serif;
   height: 100px;
   background-color: #2e2e31;
   border-radius: 0px;
-  
+  /* background-image: url(/866-536x354.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; */
 }
 
 .animate{
@@ -130,3 +132,4 @@ animation: jump 2s infinite;
   50%   { transform: scale(1)   translate(0, 0%); }
   100%   { transform: scale(1)   translate(0, -50%); }
 };
+

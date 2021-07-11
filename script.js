@@ -3,14 +3,16 @@ console.log(`The JS works!`);
 const blob = document.getElementById("blob");
 const borderRadius = document.getElementById("border-radius");
 const color = document.getElementById("color");
+const image = document.getElementById("image");
+
 const copyCodeButton = document.getElementById("copyCode");
 const animateButton = document.getElementById("animate");
-
 const resetBlobButton = document.getElementById("reset");
 
 const defaultBorderRadius = '0';
 const defaultColor = '#000';
 const defaultSize = '100';
+// const defaultImageBackground;
 
 
 //functions that changes the blob after the user changed the value of the input
@@ -28,6 +30,11 @@ size.oninput = function () {
     blob.style.height = `${size.value}px`;
 };
 
+image.oninput = function () {
+    blob.style.backgroundImage = `url(${image.value})`;
+    console.log(`test`);
+};
+
 
 //function that creates the code based on the user input.
 function createCode() {
@@ -41,6 +48,7 @@ function createCode() {
       border-radius: ${borderRadius.value}px;
     }
     `;
+
 };
 
 
@@ -104,3 +112,4 @@ function resetBlob() {
 copyCodeButton.addEventListener('click', copyCode);
 resetBlobButton.addEventListener('click', resetBlob);
 animateButton.addEventListener('click', addAnimation);
+
