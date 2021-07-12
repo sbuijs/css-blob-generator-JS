@@ -39,6 +39,7 @@
     --green: #88c459;
     --red: #f94747;
     --yellow: #ffd137;
+    --yellow-2: #f0c129;
 }
 
 html, body {
@@ -109,6 +110,27 @@ font-family: 'Merriweather', serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.btn{
+  padding: 10px;
+  background-color: var(--color-warning); 
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: var(--yellow-2);
+}
+
+.copyCode{
+  background-color: white;
+}
+
+.copyCode:hover{
+  background-color: var(--gray-1);
 }
 
 
