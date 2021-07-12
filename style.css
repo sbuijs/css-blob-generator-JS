@@ -112,13 +112,15 @@ font-family: 'Merriweather', serif;
   justify-content: center;
 }
 
+button{
+  cursor: pointer;
+}
 
 .btn{
   padding: 10px;
   background-color: var(--color-warning); 
   border-radius: 10px;
   border: 1px solid black;
-  cursor: pointer;
 }
 
 .btn:hover{
