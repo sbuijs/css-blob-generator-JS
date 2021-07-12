@@ -49,6 +49,31 @@ function createCode() {
     }
     `;
 
+    if (blob.classList.contains("animate")) {
+        console.log(`contains animate!`);
+        code = `
+    <div id="blob"></div>
+
+    #blob{
+      width: ${size.value}px;
+      height: ${size.value}px;
+      background-color: ${color.value};
+      border-radius: ${borderRadius.value}px;
+    }
+
+    .animate{
+    animation: jump 2s infinite;
+    }
+
+
+    @keyframes jump {
+    0%   { transform: scale(1)   translate(0, -50%); }
+    50%   { transform: scale(1)   translate(0, 0%); }
+    100%   { transform: scale(1)   translate(0, -50%); }
+    };
+    `;
+    }
+
 };
 
 
@@ -92,6 +117,12 @@ function copyCode() {
 //turn animation on/off
 function addAnimation() {
     blob.classList.toggle("animate");
+
+    if (animateButton.innerHTML === "Turn animation ON") {
+        animateButton.innerHTML = "Turn animation OFF";
+    } else {
+        animateButton.innerHTML = "Turn animation ON";
+    }
 };
 
 
@@ -104,6 +135,8 @@ function resetBlob() {
     size.value = defaultSize;
     blob.style.width = `${defaultSize}`;
     blob.style.height = `${defaultSize}`;
+    blob.classList.remove("animate");
+    animateButton.innerHTML = "Turn animation ON";
 };
 
 
